@@ -38,4 +38,10 @@ class ItemsAdapter (private val onItemRemoved: (ItemModel) -> Unit):
         }
 
     }
+    fun updateItems(newItems: List<ItemModel>) {
+        // Atualiza a lista de itens.
+        items = newItems
+        // Notifica o RecyclerView que os dados mudaram.
+        notifyDataSetChanged()
+    }
 }
