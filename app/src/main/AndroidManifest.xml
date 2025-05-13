@@ -13,10 +13,10 @@
         android:theme="@style/Theme.Androidlistadecompras"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="guilherme26bc.com.github.android_lista_de_compras.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.Androidlistadecompras">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
