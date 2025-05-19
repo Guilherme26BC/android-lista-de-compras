@@ -67,9 +67,9 @@ app/src/androidTest/java/guilherme26bc/com/github/android_lista_de_compras
 
 * [ItemAdapter.kt](#PacoteViewModelItemAdapter)
 
-* [ItemsViewModel.kt](#PacoteViewModel:ItemsViewModel)
+* [ItemsViewModel.kt](#PacoteViewModelItemsViewModel)
 
-* [ItemViewModelFactory.kt](#PacoteViewModel:ItemViewModelFactory)
+* [ItemViewModelFactory.kt](#PacoteViewModelItemViewModelFactory)
 
 * [MainActivity.kt](#MainActivity)
 
