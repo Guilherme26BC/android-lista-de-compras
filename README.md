@@ -67,9 +67,9 @@ app/src/androidTest/java/guilherme26bc/com/github/android_lista_de_compras
 
 * [ItemAdapter.kt](#PacoteViewModelItemAdapter)
 
-* [ItemsViewModel.kt](#PacoteViewModel:ItemsViewModel)
+* [ItemsViewModel.kt](#PacoteViewModelItemsViewModel)
 
-* [ItemViewModelFactory.kt](#PacoteViewModel:ItemViewModelFactory)
+* [ItemViewModelFactory.kt](#PacoteViewModelItemViewModelFactory)
 
 * [MainActivity.kt](#MainActivity)
 
@@ -353,7 +353,7 @@ notifyDataSetChanged()
 
 - Pra finalizar chamamos o método notifyDataChanged() que avisa ao recyclerView que aconteceu uma mudança de dados e a função bind precisa ser chamado.
 
-## Pacote ViewModel: ItemsViewModel
+## Pacote ViewModel ItemsViewModel
 
 ### Descrição
 
@@ -497,7 +497,7 @@ itemDao.delete(item)
 
 - dentro do bloco chamamos o itemDao.delete passando o item recebido como parâmetro.
 
-## Pacote ViewModel: ItemViewModelFactory
+## Pacote ViewModel ItemViewModelFactory
 
 ### Descrição
 
@@ -636,5 +636,7 @@ itemsAdapter.updateItems(items)
 ## Imagem do funcionamento
 
 ![imgAntes.png](images%2FimgAntes.png)
+
 ![imgDepois.png](images%2FimgDepois.png)
+
 ![imgExcluir.png](images%2FimgExcluir.png)
