@@ -638,5 +638,9 @@ itemsAdapter.updateItems(items)
 ![imgAntes.png](images%2FimgAntes.png)
 
 ![imgDepois.png](images%2FimgDepois.png)
+<<<<<<< HEAD
 
 ![imgExcluir.png](images%2FimgExcluir.png)
+=======
+![imgExcluir.png](images%2FimgExcluir.png)
+>>>>>>> 0174d1131175929f5aa265c99e6ac5dc1db7a3ff
