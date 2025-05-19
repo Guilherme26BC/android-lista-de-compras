@@ -59,21 +59,21 @@ app/src/androidTest/java/guilherme26bc/com/github/android_lista_de_compras
 
 ## Ordem de explicação
 
-* [ItemModel.kt](#PacoteDataClasseItemModel)
+* [ItemModel.kt](#ItemModel)
 
-* [ItemDao.kt](#PacoteDataItemDao)
+* [ItemDao.kt](#ItemDao)
 
-* [ItemDataBase.kt](#PacotedataItemDataBase)
+* [ItemDataBase.kt](#ItemDataBase)
 
-* [ItemAdapter.kt](#PacoteViewModelItemAdapter)
+* [ItemAdapter.kt](#ItemAdapter)
 
-* [ItemsViewModel.kt](#PacoteViewModelItemsViewModel)
+* [ItemsViewModel.kt](#ItemsViewModel)
 
-* [ItemViewModelFactory.kt](#PacoteViewModelItemViewModelFactory)
+* [ItemViewModelFactory.kt](#ItemViewModelFactory)
 
 * [MainActivity.kt](#MainActivity)
 
-## Pacote Data Classe ItemModel
+## ItemModel
 
 ### Descrição
 
@@ -103,7 +103,7 @@ val  name: String
 
 - @PrimaryKey(autoGenerate = true) - indica que o atributo é a primary  key da tabela com geração automática
 
-## Pacote Data ItemDao
+## ItemDao
 
 ### Descricao
 
@@ -143,7 +143,7 @@ fun delete(item: ItemModel)
 
 - métodos que pedem como parâmetro o item que será inserido ou removido.
 
-## Pacote data ItemDataBase
+## ItemDataBase
 
 ### Descrição
 
@@ -167,7 +167,7 @@ abstract fun  itemDao():ItemDao
 
 - Os métodos dessa classe são os pontos de acesso com as classes, no nosso caso é o ponto de acesso com a classe ItemDao.
 
-## Pacote ViewModel  ItemAdapter
+## ItemAdapter
 
 ### Descrição
 
@@ -353,7 +353,7 @@ notifyDataSetChanged()
 
 - Pra finalizar chamamos o método notifyDataChanged() que avisa ao recyclerView que aconteceu uma mudança de dados e a função bind precisa ser chamado.
 
-## Pacote ViewModel ItemsViewModel
+## ItemsViewModel
 
 ### Descrição
 
@@ -497,7 +497,7 @@ itemDao.delete(item)
 
 - dentro do bloco chamamos o itemDao.delete passando o item recebido como parâmetro.
 
-## Pacote ViewModel ItemViewModelFactory
+## ItemViewModelFactory
 
 ### Descrição
 
@@ -636,11 +636,5 @@ itemsAdapter.updateItems(items)
 ## Imagem do funcionamento
 
 ![imgAntes.png](images%2FimgAntes.png)
-
 ![imgDepois.png](images%2FimgDepois.png)
-<<<<<<< HEAD
-
 ![imgExcluir.png](images%2FimgExcluir.png)
-=======
-![imgExcluir.png](images%2FimgExcluir.png)
->>>>>>> 0174d1131175929f5aa265c99e6ac5dc1db7a3ff
