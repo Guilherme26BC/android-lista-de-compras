@@ -12,12 +12,10 @@ import guilherme26bc.com.github.android_lista_de_compras.model.ItemModel
 class ItemsAdapter (private val onItemRemoved: (ItemModel) -> Unit):
     RecyclerView.Adapter<ItemsAdapter.ItemViewHolder>() {
 
-        //lista de itens que serão exibidos no recycler view
         private var items = listOf<ItemModel>()
         override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemsAdapter.ItemViewHolder {
             val view = LayoutInflater.from(parent.context)
                 .inflate(R.layout.item_layout, parent, false)
-            // Cria e retorna um novo ViewHolder.
             return ItemViewHolder(view)
     }
     override fun onBindViewHolder(holder: ItemsAdapter.ItemViewHolder, position: Int) {
@@ -39,9 +37,7 @@ class ItemsAdapter (private val onItemRemoved: (ItemModel) -> Unit):
 
     }
     fun updateItems(newItems: List<ItemModel>) {
-        // Atualiza a lista de itens.
         items = newItems
-        // Notifica o RecyclerView que os dados mudaram.
         notifyDataSetChanged()
     }
 }

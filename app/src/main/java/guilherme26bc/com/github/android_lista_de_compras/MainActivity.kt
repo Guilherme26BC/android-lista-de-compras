@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
 
         val toolbar: Toolbar = findViewById(R.id.toolbar)
         setSupportActionBar(toolbar)
-        // Define o título da barra de ação.
         supportActionBar?.title = "Lista de Compras"
 
         val recyclerView = findViewById<RecyclerView>(R.id.recyclerView)
@@ -34,8 +33,8 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener{
             if(editText.text.isEmpty()){
-                editText.error ="Preencha um valor" //esse error é um icone no canto
-                return@setOnClickListener //retorna para o listner
+                editText.error ="Preencha um valor"
+                return@setOnClickListener
             }
 
             viewModel.addItem(editText.text.toString())
